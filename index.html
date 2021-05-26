@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Links</title>
+        <script>
+            function onErrorLoader(obj, link){
+                if(obj.tagName != "SCRIPT")
+                    obj.href = link;
+                else
+                    obj.src = link;
+            }
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" onerror="onErrorLoader(this, 'bootstrap/3.3.2/css/bootstrap.min.css')" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" onerror="onErrorLoader(this, 'bootstrap/3.3.2/css/bootstrap-theme.min.css')" />
+        <style type="text/css">
+            .panel-heading-primary {
+            background-image: linear-gradient(to bottom,#3BADF0 0,#c4e3f3 100%) !important;
+            }
+            .panel-heading-success {
+            color: #1D5727 !important;
+            background-image: linear-gradient(to bottom,#0CAD15 0,#6DC272 100%) !important;
+            }
+        </style>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png?v=alQ0b4O759">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png?v=alQ0b4O759">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png?v=alQ0b4O759">
+        <link rel="manifest" href="favicon_package_v0.16/site.webmanifest?v=alQ0b4O759">
+        <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg?v=alQ0b4O759" color="#5bbad5">
+        <link rel="shortcut icon" href="favicon_package_v0.16/favicon.ico?v=alQ0b4O759">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body style="margin: 12px">
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- Column 1 -->
+            <div class="col-md-2">
+                <!-- Collapsible Panels modified from https://bootstrapdocs.com/v3.3.2/docs/javascript/#collapse-example-accordion -->
+                <div class="panel-group" id="column1" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column1" href="#crm" aria-controls="crm">
+                                GrowPath
+                            </div>
+                        </div>
+                        <div id="crm" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="https://growpath.atlassian.net/secure/RapidBoard.jspa?rapidView=31&projectKey=CORE">Jira Board</a>
+                                    <dt><a href="https://drive.google.com/drive/my-drive">Google Drive</a>
+                                    <dt><a href="https://growpath365-my.sharepoint.com/personal/evan_grote_growpath_com/_layouts/15/onedrive.aspx">OneDrive</a></dt>
+                                    <dt><a href="https://outlook.office365.com/mail/inbox">Outlook Web App</a></dt>
+                                    <dt><a href="https://www.office.com/">Office 365 Home</a></dt>
+                                    <dt><a href="https://clockify.me/tracker">Clockify</a></dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="col-md-2">
+                <div class="panel-group" id="column2" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column2" href="#github" aria-controls="github">
+                                Github
+                            </div>
+                        </div>
+                        <div id="github" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="https://github.com/growpath/core">core</a></dt>
+                                    <dt><a href="https://github.com/growpath/gretl">gretl</a></dt>
+                                </p>
+                                    <dt><a href="https://github.com/pulls?q=is%3Aopen+org%3Agrowpath">PR Dashboard</a></dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 3 -->
+            <div class="col-md-2">
+                <div class="panel-group" id="column3" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column3" href="#resources" aria-controls="resources">
+                                Resources
+                            </div>
+                        </div>
+                        <div id="resources" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="https://console.cloud.google.com/home/dashboard?project=growpath-staging&pli=1">Google Cloud Console</a>
+                                    <dt><a href="https://growpath.sharefile.com/dashboard">ShareFile</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 4 -->
+            <div class="col-md-2">
+                <div class="panel-group" id="column4" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column4" href="#devEnvironment" aria-controls="devEnvironment">
+                                Column Four
+                            </div>
+                        </div>
+                        <div id="devEnvironment" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="link">link_title</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 5 -->
+            <div class="col-md-2">
+                <div class="panel-group" id="column5" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column5" href="#stagingEnvironmentKoopa" aria-controls="stagingEnvironmentKoopa">
+                                Column Five
+                            </div>
+                        </div>
+                        <div id="stagingEnvironmentKoopa" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="link">link_title</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 6 -->
+            <div class="col-md-2">
+                <div class="panel-group" id="column6" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column6" href="#prodEnvironmentGanon" aria-controls="prodEnvironmentGanon">
+                                Column Six
+                            </div>
+                        </div>
+                        <div id="prodEnvironmentGanon" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="link">link_title</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        .panel-heading span {
+            margin-top: -20px;
+            font-size: 15px;
+        }
+        .clickable {
+            cursor: pointer;
+        }
+        .hidden {
+            display: hidden;
+        }
+        dl {
+            margin-bottom: 0px;
+        }
+        body {
+            background-color: #3C3C3C;
+            font-size: 13.5px
+        }
+        .panel-body {
+            background-color: #606060
+        }
+        a {
+            color: #99cfff
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Load jquery JS locally if CDN cannot be reached -->
+    <script src="ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- Load bootstrap JS locally if CDN cannot be reached -->
+    <script src="bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('.panel-heading span.clickable').on("click", function (e) {
+                if ($(this).hasClass('panel-collapsed')) {
+                    // expand the panel
+                    $(this).parents('.panel').find('.panel-body').slideDown();
+                    $(this).removeClass('panel-collapsed');
+                    $(this).find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                }
+                else {
+                    // collapse the panel
+                    $(this).parents('.panel').find('.panel-body').slideUp();
+                    $(this).addClass('panel-collapsed');
+                    $(this).find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                }
+            });
+        });
+    </script>
+</html>

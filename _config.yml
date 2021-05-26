@@ -1,0 +1,4 @@
+repository: your/repo
+
+plugins:
+- github-pages

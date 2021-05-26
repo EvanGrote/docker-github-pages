@@ -1,0 +1,13 @@
+version: '3'
+services:
+  jekyll:
+    build: .
+    # image: starefossen/github-pages
+    # environment:
+    #   - "JEKYLL_GITHUB_TOKEN:${JEKYLL_GITHUB_TOKEN}"
+    ports:
+      - "1234:4000"
+    volumes:
+      - ./:/usr/src/app
+    tty: true
+    restart: unless-stopped
