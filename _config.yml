@@ -2,3 +2,5 @@ repository: your/repo
 
 plugins:
 - github-pages
+
+theme: jekyll-theme-cayman
