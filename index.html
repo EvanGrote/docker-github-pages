@@ -36,7 +36,7 @@
         <!-- Row 1 -->
         <div class="row">
             <!-- Column 1 -->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <!-- Collapsible Panels modified from https://bootstrapdocs.com/v3.3.2/docs/javascript/#collapse-example-accordion -->
                 <div class="panel-group" id="column1" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-success">
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <!-- Column 2 -->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="panel-group" id="column2" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-info">
                         <div class="panel-heading">
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <!-- Column 3 -->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="panel-group" id="column3" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -113,10 +113,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column3" href="#prodEnvironmentGanon" aria-controls="prodEnvironmentGanon">
+                                External Resources
+                            </div>
+                        </div>
+                        <div id="prodEnvironmentGanon" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="https://regex101.com/">Regex Tester</a>
+                                    <dt><a href="https://stackoverflow.com/a/8922931">Return duplicates from array</a>
+                                </p>
+                                    <dt><a href="https://github.com/mperham/sidekiq/wiki/API">sidekiq API</a>
+                                </p>
+                                    <dt><a href="https://slackmojis.com">Slackmojis</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Column 4 -->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="panel-group" id="column4" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-warning">
                         <div class="panel-heading">
@@ -136,14 +155,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Column 5 -->
-            <div class="col-md-2">
-                <div class="panel-group" id="column5" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-danger">
+                    <div class="panel panel-warning">
                         <div class="panel-heading">
-                            <div data-toggle="collapse" data-parent="#column5" href="#stagingEnvironmentKoopa" aria-controls="stagingEnvironmentKoopa">
+                            <div data-toggle="collapse" data-parent="#column4" href="#stagingEnvironmentKoopa" aria-controls="stagingEnvironmentKoopa">
                                 Production
                             </div>
                         </div>
@@ -163,30 +177,44 @@
                     </div>
                 </div>
             </div>
-            <!-- Column 6 -->
-            <div class="col-md-2">
-                <div class="panel-group" id="column6" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-info">
+            <!-- Column 5 -->
+            <!-- <div class="col-md-2">
+                <div class="panel-group" id="column5" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-danger">
                         <div class="panel-heading">
-                            <div data-toggle="collapse" data-parent="#column6" href="#prodEnvironmentGanon" aria-controls="prodEnvironmentGanon">
-                                External Resources
+                            <div data-toggle="collapse" data-parent="#column5" href="#stagingEnvironmentKoopa" aria-controls="stagingEnvironmentKoopa">
+                                Column Five
                             </div>
                         </div>
-                        <div id="prodEnvironmentGanon" class="panel-collapse collapse in" role="tabpanel">
+                        <div id="stagingEnvironmentKoopa" class="panel-collapse collapse in" role="tabpanel">
                             <div class="panel-body">
                                 <dl>
-                                    <dt><a href="https://regex101.com/">Regex Tester</a>
-                                    <dt><a href="https://stackoverflow.com/a/8922931">Return duplicates from array</a>
-                                </p>
-                                    <dt><a href="https://github.com/mperham/sidekiq/wiki/API">sidekiq API</a>
-                                </p>
-                                    <dt><a href="https://slackmojis.com">Slackmojis</a>
+                                    <dt><a href="link">link_title</a>
                                 </dl>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <!-- Column 6 -->
+            <!-- <div class="col-md-2">
+                <div class="panel-group" id="column6" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column6" href="#prodEnvironmentGanon" aria-controls="prodEnvironmentGanon">
+                                Column Six
+                            </div>
+                        </div>
+                        <div id="prodEnvironmentGanon" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="link">link_title</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </body>
     <style>
