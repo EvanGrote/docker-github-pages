@@ -102,15 +102,6 @@
                         <div id="resources" class="panel-collapse collapse in" role="tabpanel">
                             <div class="panel-body">
                                 <dl>
-                                    <dt><a href="https://sandbox.growpath-staging.com/">GrowPath Staging Sandbox</a>
-                                    <dt><a href="https://salespath.growpath.com/">SalesPath</a>
-                                </p>
-                                    <dt><a href="https://console.cloud.google.com/kubernetes/workload?project=growpath-cloud">Kubernetes Workloads</a>
-                                    <dt><a href="https://console.cloud.google.com/gcr/images/growpath-cloud?project=growpath-cloud">Docker Container Registry</a>
-                                    <dt><a href="https://console.cloud.google.com/storage/browser?project=growpath-staging&prefix=">Staging Cloud Storage</a>
-                                    <dt><a href="https://console.cloud.google.com/storage/browser?project=growpath-cloud&prefix=">Prod Cloud Storage</a>
-                                    <dt><a href="https://console.cloud.google.com/cloud-build/triggers?project=growpath-cloud">Prod Cloud Build</a>
-                                </p>
                                     <dt><a href="https://growpath.sharefile.com/dashboard">ShareFile</a>
                                 </p>
                                     <dt><a href="https://sentry.io/organizations/growpath/issues/?project=1195299&statsPeriod=14d">Sentry</a></dt>
@@ -130,10 +121,58 @@
                     <div class="panel panel-warning">
                         <div class="panel-heading">
                             <div data-toggle="collapse" data-parent="#column4" href="#devEnvironment" aria-controls="devEnvironment">
-                                External Resources
+                                Staging
                             </div>
                         </div>
                         <div id="devEnvironment" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="https://sandbox.growpath-staging.com/">GrowPath Staging Sandbox</a>
+                                </p>
+                                    <dt><a href="https://console.cloud.google.com/kubernetes/workload?project=growpath-staging">Kubernetes Workloads</a>
+                                    <dt><a href="https://console.cloud.google.com/storage/browser?project=growpath-staging">Cloud Storage</a>
+                                    <dt><a href="https://console.cloud.google.com/gcr/images/growpath-staging?project=growpath-staging">Docker Container Registry</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 5 -->
+            <div class="col-md-2">
+                <div class="panel-group" id="column5" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column5" href="#stagingEnvironmentKoopa" aria-controls="stagingEnvironmentKoopa">
+                                Production
+                            </div>
+                        </div>
+                        <div id="stagingEnvironmentKoopa" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <dl>
+                                    <dt><a href="https://salespath.growpath.com/">SalesPath</a>
+                                </p>
+                                    <dt><a href="https://console.cloud.google.com/kubernetes/workload?project=growpath-cloud">Kubernetes Workloads</a>
+                                    <dt><a href="https://console.cloud.google.com/storage/browser?project=growpath-cloud">Cloud Storage</a>
+                                    <dt style="padding-left:30px;"><a href="https://console.cloud.google.com/storage/browser/growpath-db-backups-prod-master;tab=objects?project=growpath-cloud">DB Backups</a>
+                                    <dt><a href="https://console.cloud.google.com/cloud-build/triggers?project=growpath-cloud">Cloud Build Triggers</a>
+                                    <dt><a href="https://console.cloud.google.com/gcr/images/growpath-cloud?project=growpath-cloud">Docker Container Registry</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 6 -->
+            <div class="col-md-2">
+                <div class="panel-group" id="column6" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div data-toggle="collapse" data-parent="#column6" href="#prodEnvironmentGanon" aria-controls="prodEnvironmentGanon">
+                                External Resources
+                            </div>
+                        </div>
+                        <div id="prodEnvironmentGanon" class="panel-collapse collapse in" role="tabpanel">
                             <div class="panel-body">
                                 <dl>
                                     <dt><a href="https://regex101.com/">Regex Tester</a>
@@ -148,44 +187,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Column 5 -->
-            <!-- <div class="col-md-2">
-                <div class="panel-group" id="column5" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-danger">
-                        <div class="panel-heading">
-                            <div data-toggle="collapse" data-parent="#column5" href="#stagingEnvironmentKoopa" aria-controls="stagingEnvironmentKoopa">
-                                Column Five
-                            </div>
-                        </div>
-                        <div id="stagingEnvironmentKoopa" class="panel-collapse collapse in" role="tabpanel">
-                            <div class="panel-body">
-                                <dl>
-                                    <dt><a href="link">link_title</a>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Column 6 -->
-            <!-- <div class="col-md-2">
-                <div class="panel-group" id="column6" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <div data-toggle="collapse" data-parent="#column6" href="#prodEnvironmentGanon" aria-controls="prodEnvironmentGanon">
-                                Column Six
-                            </div>
-                        </div>
-                        <div id="prodEnvironmentGanon" class="panel-collapse collapse in" role="tabpanel">
-                            <div class="panel-body">
-                                <dl>
-                                    <dt><a href="link">link_title</a>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </body>
     <style>
