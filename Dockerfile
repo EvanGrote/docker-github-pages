@@ -1,11 +1,13 @@
 # FROM starefossen/ruby-node:2-6-alpine
-FROM bbdinc/ruby-node-yarn:2.7.4-8.17.0-1.22.4
+# FROM bbdinc/ruby-node-yarn:2.7.4-8.17.0-1.22.4
+FROM bbdinc/ruby-node-yarn:latest
+
+RUN apt-get update
 
 RUN apt -y install \
     build-essential \
     ruby-dev \
     libc-dev \
-    linux-headers-5.10.0-10-common \
     git
 
 WORKDIR /usr/src/app
